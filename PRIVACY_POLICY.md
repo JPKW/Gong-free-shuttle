@@ -1,9 +1,9 @@
-# Privacy Policy for Gong Shuttle (Wollongong Free Bus)
+# Privacy Policy for Nearest Free Wollongong Bus
 
-**Last Updated:** November 7, 2026  
-**Effective Date:** November 7, 2026  
+**Last Updated:** November 8, 2026  
+**Effective Date:** November 8, 2026  
 
-This Privacy Policy describes how the **Gong Shuttle** mobile application ("the App", "we", "us", or "our") handles your information. We are committed to protecting your privacy and ensuring you have a transparent, secure experience when using our app.
+This Privacy Policy describes how the **Nearest Free Wollongong Bus** mobile application ("the App", "we", "us", or "our") handles your information. We are committed to protecting your privacy and ensuring you have a transparent, secure experience when using our app.
 
 ---
 
@@ -36,7 +36,7 @@ Along roads like Crown Street, Burelli Street, and Northfields Avenue, 55A and 5
 - **No Background Tracking:** The App does **not** request `ACCESS_BACKGROUND_LOCATION`. It does not track your location when the app is closed or minimized.
 - **Home Screen Widget:** When you place the home screen widget on your launcher, location is only queried when you explicitly tap the widget refresh button (`↻`) or when the widget updates while connected to a network.
 
-You can revoke location permissions at any time via your device's **Settings > Apps > Gong Shuttle > Permissions > Location**. If revoked, the app will display official scheduled timetable estimates until location access is re-enabled.
+You can revoke location permissions at any time via your device's **Settings > Apps > Nearest Free Wollongong Bus > Permissions > Location**. If revoked, the app will display official scheduled timetable estimates until location access is re-enabled.
 
 ---
 
@@ -56,14 +56,13 @@ The App interacts with external services in the following limited ways:
 
 - **Transport for NSW Open Data:** Source of real-time bus departure information. (Subject to TfNSW Open Data terms).
 - **Google Maps Walking Directions:** When you tap the **"Directions"** button on a stop card, the App opens an Android system intent (`google.navigation:q=lat,lng&mode=w`) to launch the Google Maps app installed on your device for turn-by-turn walking directions. No data is shared with Google Maps other than the destination bus stop coordinates.
-- **Sponsor / External Link:** The app includes an informational link to *TaskPasser* (`taskpasser.com`). Tapping this banner opens your default web browser. The app itself contains no third-party ad networks, tracking pixels, or cross-app tracking SDKs.
 - **Cloudflare Workers:** Acts as a reverse proxy for transit API calls, caching public arrival timetables at the edge to protect rate limits.
 
 ---
 
 ## 5. Government Non-Affiliation Disclaimer
 
-**Gong Shuttle is an independent community application developed for commuters, university students, and visitors to Wollongong.**
+**Nearest Free Wollongong Bus is an independent community application developed for commuters, university students, and visitors to Wollongong.**
 
 - The App is **not** an official government app and is **not** affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with **Transport for NSW**, the **NSW Department of Transport**, or the **NSW Government**.
 - Public transit arrival times, schedules, and route information are sourced from the **Transport for NSW Open Data Hub** under Creative Commons licensing.
@@ -75,7 +74,7 @@ The App interacts with external services in the following limited ways:
 Because the App collects **zero personal data** and operates without user accounts:
 - There is no personal data retained on any server.
 - Local user preferences (such as your preferred route display order) are stored strictly on your device using Android Jetpack DataStore.
-- You can erase all local app preferences at any time by clearing app data in **Settings > Apps > Gong Shuttle > Storage & Cache > Clear Storage**, or by uninstalling the application.
+- You can erase all local app preferences at any time by clearing app data in **Settings > Apps > Nearest Free Wollongong Bus > Storage & Cache > Clear Storage**, or by uninstalling the application.
 
 ---
 
@@ -93,9 +92,9 @@ We may update this Privacy Policy from time to time to reflect operational or re
 
 ## 9. Contact Us
 
-If you have questions, feedback, or concerns regarding this Privacy Policy or the practices of the Gong Shuttle application, please contact:
+If you have questions, feedback, or concerns regarding this Privacy Policy or the practices of the Nearest Free Wollongong Bus application, please contact:
 
 - **Developer:** Joerg Wood
 - **Email:** joerg.wood@gmail.com
-- **Project Repository:** https://github.com/
+- **Project Repository:** https://github.com/JPKW/Gong-free-shuttle
 - **Location:** Wollongong, New South Wales, Australia
