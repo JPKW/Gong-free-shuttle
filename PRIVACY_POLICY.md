@@ -43,7 +43,7 @@ You can revoke location permissions at any time via your device's **Settings > A
 ## 3. Network Communication and Transit Data
 
 To display real-time bus arrivals and service alerts:
-1. The App queries a dedicated serverless proxy (`gong-shuttle-tfnsw-proxy.joerg-wood.workers.dev`) hosted on Cloudflare Workers, which communicates securely with the **Transport for NSW (TfNSW) Open Data Hub**.
+1. The App queries a dedicated serverless proxy (`gong-shuttle-tfnsw-proxy.joerg-wood.workers.dev`) hosted on Cloudflare Workers, which communicates securely with the **Transport for NSW (TfNSW) Open Data Hub** (`https://opendata.transport.nsw.gov.au/`).
 2. **Data Sent:** Only public transit identifiers are queried (such as standard NSW transit Stop IDs like `250045` or general bounding coordinates for Wollongong stops).
 3. **No PII:** Requests sent to the proxy contain **no personal identifiers**, no Advertising IDs (AAID), no IP address tracking, and no device hardware fingerprints.
 4. **Encryption:** All network requests are encrypted using industry-standard HTTPS (TLS 1.2/1.3).
@@ -54,7 +54,8 @@ To display real-time bus arrivals and service alerts:
 
 The App interacts with external services in the following limited ways:
 
-- **Transport for NSW Open Data:** Source of real-time bus departure information. (Subject to TfNSW Open Data terms).
+- **Transport for NSW Open Data (`https://opendata.transport.nsw.gov.au/`):** Official source of real-time bus departure information (subject to TfNSW Open Data terms).
+- **Transport for NSW (`https://www.transport.nsw.gov.au/`) & Transport NSW (`https://transportnsw.info/travel-info/ways-to-get-around/bus/gong-shuttle`):** Official NSW Government transit agency and public Gong Shuttle route/timetable information.
 - **Google Maps Walking Directions:** When you tap the **"Directions"** button on a stop card, the App opens an Android system intent (`google.navigation:q=lat,lng&mode=w`) to launch the Google Maps app installed on your device for turn-by-turn walking directions. No data is shared with Google Maps other than the destination bus stop coordinates.
 - **Cloudflare Workers:** Acts as a reverse proxy for transit API calls, caching public arrival timetables at the edge to protect rate limits.
 
@@ -62,10 +63,13 @@ The App interacts with external services in the following limited ways:
 
 ## 5. Government Non-Affiliation Disclaimer
 
-**Nearest Free Wollongong Bus is an independent community application developed for commuters, university students, and visitors to Wollongong.**
+**Nearest Free Wollongong Bus does not represent a government entity.** It is an independent community application developed for commuters, university students, and visitors to Wollongong.
 
 - The App is **not** an official government app and is **not** affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with **Transport for NSW**, the **NSW Department of Transport**, or the **NSW Government**.
-- Public transit arrival times, schedules, and route information are sourced from the **Transport for NSW Open Data Hub** under Creative Commons licensing.
+- Public transit arrival times, schedules, and route information are sourced from the following official government sources under Creative Commons licensing:
+  - Transport for NSW Open Data Hub: https://opendata.transport.nsw.gov.au/
+  - Transport for NSW: https://www.transport.nsw.gov.au/
+  - Transport NSW Gong Shuttle (Routes 55A & 55C): https://transportnsw.info/travel-info/ways-to-get-around/bus/gong-shuttle
 
 ---
 
